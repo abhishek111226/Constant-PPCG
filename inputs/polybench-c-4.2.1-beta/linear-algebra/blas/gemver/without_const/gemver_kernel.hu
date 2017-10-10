@@ -1,0 +1,15 @@
+#include <assert.h>
+#include "cuda.h"
+
+
+__global__ void kernel0(double A[120][120], double u1[120], double u2[120], double v1[120], double v2[120]);
+
+__global__ void kernel1(double A[120][120], double beta, double x[120], double y[120], double z[120]);
+
+__global__ void kernel2(double A[120][120], double alpha, double w[120], double x[120]);
+
+#ifdef HOSTCODE 
+ 
+#elif DEVICECODE 
+
+ #endif 

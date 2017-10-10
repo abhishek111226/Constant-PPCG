@@ -1,0 +1,17 @@
+#include <assert.h>
+#include "cuda.h"
+
+
+__global__ void kernel0(float _fict_[40], float ey[60][80], int c0);
+
+__global__ void kernel1(float ey[60][80], float hz[60][80], int c0);
+
+__global__ void kernel2(float ex[60][80], float hz[60][80], int c0);
+
+__global__ void kernel3(float ex[60][80], float ey[60][80], float hz[60][80], int c0);
+
+#ifdef HOSTCODE 
+ 
+#elif DEVICECODE 
+
+ #endif 

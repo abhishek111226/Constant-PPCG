@@ -1,0 +1,15 @@
+#include "cuda.h"
+
+
+__global__ void kernel0(int *A, int *x1);
+
+__global__ void kernel1(int *A, int *x2);
+
+#ifdef HOSTCODE 
+ 
+#elif DEVICECODE 
+
+ #endif 
+__constant__ int const_y_1[100];
+__constant__ int const_y_2[100];
+void init_const_scop_0(int *y_1,int *y_2);
